@@ -83,7 +83,9 @@ class SnipOverlay(tk.Toplevel):
         self._canvas.bind("<ButtonPress-1>", self._on_press)
         self._canvas.bind("<B1-Motion>", self._on_drag)
         self._canvas.bind("<ButtonRelease-1>", self._on_release)
+        self._canvas.bind("<Escape>", lambda _: self._cancel())
         self.bind("<Escape>", lambda _: self._cancel())
+        self.after(50, self.focus_force)
 
     # ── Mouse Handlers ───────────────────────────────────────────────────
     def _on_press(self, event: tk.Event) -> None:
