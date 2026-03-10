@@ -4,9 +4,9 @@ Application-wide constants and configuration.
 
 # ── Window ────────────────────────────────────────────────────────────────
 APP_TITLE = "Manga Translator"
-WINDOW_SIZE = "1100x750"
-MIN_WIDTH = 900
-MIN_HEIGHT = 600
+WINDOW_SIZE = "1150x750"
+MIN_WIDTH = 1150
+MIN_HEIGHT = 750
 
 # ── Appearance ────────────────────────────────────────────────────────────
 APPEARANCE_MODE = "dark"
